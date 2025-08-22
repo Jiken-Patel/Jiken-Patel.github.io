@@ -1,0 +1,93 @@
+
+    :root {
+      --primary: #4A90E2;
+      --dark: #222;
+      --light: #f4f4f9;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--light);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: var(--dark);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+    
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1s ease-in;
+    }
+    h2 {
+      color: var(--dark);
+      border-left: 5px solid var(--primary);
+      padding-left: 10px;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 8px 0;
+      padding-left: 18px;
+      position: relative;
+    }
+    ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    #contact a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 500;
+    }
+    #contact p {
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      text-align: center;
+      background: var(--dark);
+      color: #fff;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 { font-size: 2rem; }
+      nav a { margin: 0 10px; }
+      section { padding: 40px 15px; }
+    }
+
+    /* Fade-in Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
